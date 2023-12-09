@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,16 +57,18 @@
                             if(isset($_GET['error'])){
                                 echo "<p style='color:red'>{$_GET['error']}</p>";
                             }
+                        
                         ?>
-                        <form action="check_login.php" method="post">
+                        <form action="check_login.php" method="post"> 
+
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="txtUser"><i class="fas fa-user"></i></span>
-                                <input type="text" class="form-control" placeholder="username" name="user" id="user">
+                                <input type="text" class="form-control" placeholder="username" name="user" id="user"  >
                             </div>
 
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="txtPass"><i class="fas fa-key"></i></span>
-                                <input type="text" class="form-control" placeholder="password" name="pass" id="pass">
+                                <input type="text" class="form-control" placeholder="password" name="pass" id="pass" >
                             </div>
                             
                             <div class="row align-items-center remember">
@@ -73,7 +76,6 @@
                             </div>
                             <div class="form-group">
                                 <input type="submit" value="Login" class="btn float-end login_btn">
-
                             </div>
                         </form>
                     </div>
